@@ -2,16 +2,26 @@
 
 
    gồm có các thẻ
+
    h1...h6
+
    p
+
    img
+
    a
+
    ul li
+
    table
+
    input
+
    button
+
    div
    
+
 
 2 sử dụng css trong html
     
