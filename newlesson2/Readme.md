@@ -16,3 +16,5 @@
     Inline
 3 id và class
 4 Độ ưu tiên trong Css
+5 Đệm viền khoảng lề
+6 Thuộc tính tạo nền
