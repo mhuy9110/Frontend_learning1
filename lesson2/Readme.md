@@ -41,3 +41,12 @@
 
 
 6 Thuộc tính tạo nền
+
+7 Thuộc tính vị trí
+    
+
+    Relative
+    absolute
+    Fixed
+    
+
