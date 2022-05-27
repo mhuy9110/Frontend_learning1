@@ -48,5 +48,9 @@
     Relative
     absolute
     Fixed
-    
+
+
+8 Một số tricks và tips
+
+
 
