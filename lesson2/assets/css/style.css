@@ -9,6 +9,7 @@ html{
 #main{
 
 }
+
 #header{
     height: 46px;
     background-color: #000;
@@ -16,6 +17,7 @@ html{
     top: 0; 
     left: 0;
     right: 0;
+    z-index: 1;
 }
 #nav{
     display: inline-block;
@@ -82,5 +84,73 @@ html{
     line-height: 46px;
 }
 #slider{
-    
+    margin-top: 46px;
+    padding-top: 50%;
+    background-image: url(https://www.w3schools.com/w3images/chicago.jpg);
+    background-repeat: no-repeat;
+    top: center;
+    background-size: cover;
+    position: relative;
 }
+#slider .text-content{
+    position: absolute;
+    color: #fff;
+    bottom: 47px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+#slider .text-heading{
+    font-weight: 500px;
+    font-size: 24px;
+}
+#slider .text-descr{
+    font-size: 15px;
+    margin-top: 25px;
+}
+#content{
+
+}
+#content .content-section{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 0;
+}
+#content .section-heading{
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 4px;
+}
+#content .section-sub-heading{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0.6;
+}
+#content .about-text{
+    margin-top: 25px;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.4;
+}
+#content .members-list{
+    margin-top: 48px;
+}
+#content .member-item{
+   
+   width: 33,33333%;
+   text-align: center;
+}  
+#content .member-name{
+    font-size: 15px;
+}
+
+#content .member-img{
+    width: 154px;
+    margin-top: 15px;
+    border-radius: 4px;
+}
+
