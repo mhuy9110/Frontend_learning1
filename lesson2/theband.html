@@ -14,10 +14,10 @@
         <div id="header">
             <!--Begin: nav-->
             <ul id="nav">
-                <li><a href="">Home</a></li>
-                <li><a href="">Band</a></li>
-                <li><a href="">Tour</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#band">Band</a></li>
+                <li><a href="#tour">Tour</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li>
                     <a href="">
                         More
@@ -25,9 +25,9 @@
 
                     </a>
                     <ul class="subnav">
-                        <li><a href="">Merchandise</a></li>
-                        <li><a href="">Extras</a></li>
-                        <li><a href="">Media</a></li>
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Extras</a></li>
+                        <li><a href="#">Media</a></li>
                     </ul>
                 </li>
             </ul>
@@ -47,7 +47,7 @@
     </div>
     <div id="content">
         <!--About section-->
-        <div class="content-section">
+        <div id="band" class="content-section">
         <h2 class="section-heading">THE BAND</h2>
         <p class="section-sub-heading">We love music</p>
         <p class="about-text">
@@ -69,7 +69,7 @@
         </div>
     </div>
         <!--Tour section-->
-    <div class="tour-section">
+    <div id="tour" class="tour-section">
         <div class="content-section">
         <h2 class="section-heading text-white">TOUR DATES</h2>
          <p class="section-sub-heading text-white">Remember to book your tickets!</p>
@@ -87,7 +87,7 @@
                         <h3 class="place-heading">New York</h3>
                         <p class="place-time">Fri 27 Nov 2016</p>
                         <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                        <a href="#" class="place-buy-btn">Buy Tickets</a>
+                        <button class="place-buy-btn js-buy-ticket">Buy Tickets</button>
                     </div>
              </div>
              <div class="col col-third">
@@ -96,7 +96,7 @@
                     <h3 class="place-heading">Paris</h3>
                     <p class="place-time">Sat 28 Nov 2016</p>
                     <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                    <a href="#" class="place-buy-btn">Buy Tickets</a>
+                    <button class="place-buy-btn js-buy-ticket">Buy Tickets</button>
                 </div>
          </div>
          <div class="col col-third">
@@ -105,7 +105,7 @@
                 <h3 class="place-heading">San Francisco</h3>
                 <p class="place-time">Sun 29 Nov 2016</p>
                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                <a href="#" class="place-buy-btn">Buy Tickets</a>
+                <button class="place-buy-btn js-buy-ticket">Buy Tickets</button>
             </div>
      </div>
      <div class="clear"></div>
@@ -113,7 +113,7 @@
         </div>
     </div>
 <!--Contact section-->
-<div class="content-section">
+<div id="contact" class="content-section">
     <h2 class="section-heading">CONTACT</h2>
     <p class="section-sub-heading">Fan? Drop a note!</p>
 
@@ -159,7 +159,49 @@
         </div>
         <p class="copyright">Powered by <a href=" w3.css">w3.css</a></p>
     </div>
+    <div class="modal">
+        <div class="modal-container">
+            <div class="modal-close">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
 
- 
+            <header class="modal-header">
+                <i class="modal-heading-icon fa-solid fa-suitcase"></i>
+                Tickets
+            </header>
+            <div class="modal-body">
+                <label for="ticket-quatity" class="modal-label">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Tickets, $15 per person
+                </label>
+                <input id="ticke-quatity" type="text" class="model-input" placeholder="How many">
+
+                <label for="ticket-email" class="modal-label">
+                    <i class="fa-solid fa-user"></i>
+                    Send To
+                </label>
+                <input id="ticket-email" type="text" class="model-input" placeholder="Enter email...">
+
+                <button id="buy-tickets">
+                    Pay <i class="fa-solid fa-check"></i>
+                </button>
+            </div>
+            <footer class="modal-footer">
+                <p class="modal-help">Need <a href="">help?</a></p>
+            </footer>
+        </div>
+    </div>
+    <script>
+        const buyBtns = document.querySelectorAll('.js-buy-ticket')
+        const modal = document.querySelector('.modal')
+
+        function showBuyTickets(){
+            modal.classList.add('open')
+        }
+
+        for (const buyBtn of buyBtns){
+            buyBtn.addEventListener('click', )
+        }
+        </script>
 </body>
 </html>
