@@ -54,6 +54,7 @@ html{
     left: 0;
     right: 0;
     z-index: 1;
+    
 }
 #nav{
     display: inline-block;
@@ -106,6 +107,7 @@ html{
 #nav .nav-arrow-down{
     font-size: 14px;
 }
+#header .mobile-menu-btn,
 #header .search-btn{
     float: right;
     padding: 0 21px;
@@ -114,6 +116,7 @@ html{
     background-color: #f44336;
     cursor: pointer;
 }
+#header .menu-icon,
 #header .search-icon{
     color: #fff;
     font-size: 12px;
@@ -149,9 +152,12 @@ html{
 }
 #content .content-section{
     width: 800px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding: 64px 0;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 #content .section-heading{
     font-size: 30px;
@@ -397,4 +403,50 @@ html{
 }
 .modal-footer a{
     color: #2196f3;
+}
+
+@media(min-width: 1024px){
+
+}
+@media(min-width: 740px) and (max-width: 1023px){
+
+}
+/* Mobile*/
+@media(max-width: 740px){
+    #nav > li{
+        display: block;
+    }
+    #nav > li:first-child{
+        display: inline-block;
+    }
+
+    #header .search-btn{
+        display: none;
+    }
+    #nav{
+        display: none;
+    }
+
+    #header .mobile-menu-btn{
+        display: block;
+    }
+    #header{
+        overflow: hidden;
+    }
+    #nav.subnav{
+        position: initial;
+    }
+}
+#header .mobile-menu-btn:hover{
+    background-color: #ccc;
+}
+#header .mobile-menu-btn:hover .menu-icon{
+    color: #000;
+}
+
+#header .mobile-menu-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
 }
